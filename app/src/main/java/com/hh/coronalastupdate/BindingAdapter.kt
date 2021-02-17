@@ -6,7 +6,7 @@ import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
-import com.hh.coronadata.viewmodels.ListViewModel
+import com.hh.coronalastupdate.viewmodels.ListViewModel
 import com.hh.coronalastupdate.classes.CountryData
 
 @BindingAdapter("imageUrl")

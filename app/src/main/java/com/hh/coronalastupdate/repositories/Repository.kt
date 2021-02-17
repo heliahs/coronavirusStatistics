@@ -6,6 +6,7 @@ import com.hh.coronalastupdate.db.CoronaDataDatabase
 import com.hh.coronalastupdate.db.TableGlobal
 import com.hh.coronalastupdate.db.asDomainModel
 import com.hh.coronalastupdate.models.Country
+import com.hh.coronalastupdate.models.Global
 import com.hh.coronalastupdate.models.asDatabaseModel
 import com.hh.coronalastupdate.network.MarsApi.retrofitService
 
@@ -19,7 +20,7 @@ class Repository (private val database: CoronaDataDatabase) {
     val listData: LiveData<List<Country>> = Transformations.map(database.coronaInfoDao.getAll()) {
         it.asDomainModel()
     }
- //   val globalData : LiveData<Global> = database.globalDao.getAllGlobal()
+    val globalData : LiveData<Global> = database.globalDao.getAllGlobal()
 
 
 

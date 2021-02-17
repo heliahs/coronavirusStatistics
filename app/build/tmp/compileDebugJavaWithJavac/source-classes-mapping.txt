@@ -23,6 +23,9 @@ com/hh/coronalastupdate/databinding/ListFragmetLayoutBindingImpl.java
  com.hh.coronalastupdate.databinding.ListFragmetLayoutBindingImpl
 com/hh/coronalastupdate/DataBindingTriggerClass.java
  com.hh.coronalastupdate.DataBindingTriggerClass
+com/hh/coronalastupdate/generated/callback/OnClickListener.java
+ com.hh.coronalastupdate.generated.callback.OnClickListener
+ com.hh.coronalastupdate.generated.callback.OnClickListener$Listener
 com/hh/coronalastupdate/databinding/FirstPageActivityBindingImpl.java
  com.hh.coronalastupdate.databinding.FirstPageActivityBindingImpl
 com/hh/coronalastupdate/databinding/ListItemsLayoutBindingImpl.java

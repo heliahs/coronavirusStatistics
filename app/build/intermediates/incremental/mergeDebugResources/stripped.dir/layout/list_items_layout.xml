@@ -20,106 +20,103 @@
 
            
 
-<androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="@dimen/padding2"
-    android:paddingEnd="@dimen/padding2"
-    android:paddingStart="@dimen/padding2"
-
-     android:tag="layout/list_items_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
-  <!--  android:onClick="@{() -> clickListener.onClick(country)}"-->
-
-
-    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:elevation="8dp"
-        android:divider="@android:color/transparent"
-        android:dividerHeight="0.0px"
-        android:clipToPadding="false"
-        android:clipChildren="false"
-        card_view:cardElevation="10dp"
-        android:hardwareAccelerated="true"
-        card_view:cardPreventCornerOverlap="false"
-       card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:layout_constraintTop_toTopOf="parent"
-        >
+        android:paddingTop="@dimen/padding2"
+        android:paddingEnd="@dimen/padding2"
+        android:paddingStart="@dimen/padding2"
+        android:tag="layout/list_items_layout_0"                 
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <!-- Main Content View -->
-        <androidx.constraintlayout.widget.ConstraintLayout
 
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="5dp"
+            android:elevation="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0.0px"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            card_view:cardElevation="10dp"
+            android:hardwareAccelerated="true"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
             >
 
-            <ImageView
-                android:id="@+id/country_flag"
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:contentDescription="country flag"
+            <!-- Main Content View -->
+            <androidx.constraintlayout.widget.ConstraintLayout
 
-
-               />
-          <!--  app:imageUrl="@{country.countryCode.toLowerCase()}"-->
-            <TextView
-                android:id="@+id/country_name"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:layout_margin="10dp"
-                android:textSize="@dimen/text_size_medium"
-                android:textStyle="bold"
-                android:textColor="@color/black"
+                >
 
-                app:layout_constraintBottom_toBottomOf="@+id/txt_newCase"
-                app:layout_constraintEnd_toStartOf="@+id/txt_newCase"
-                app:layout_constraintStart_toEndOf="@+id/country_flag"
-                app:layout_constraintTop_toTopOf="parent"
-              />
-         <!--   android:text="@{ country.country}"-->
-            <TextView
-                android:id="@+id/txt_newDeaths"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="4dp"
-                android:gravity="end"
-                android:textSize="@dimen/text_size_small"
+                <ImageView
+                    android:id="@+id/country_flag"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:contentDescription="country flag"
+                    android:tag="binding_1"                            
 
-                android:textColor="@color/lext_color_dark_gray"
-                app:layout_constraintBottom_toTopOf="@+id/txt_newCase"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/txt_newCase"
-                app:layout_constraintTop_toTopOf="parent"
+                    />
+                <TextView
+                    android:id="@+id/country_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:tag="binding_2"           
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_newCase"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_newCase"
+                    app:layout_constraintStart_toEndOf="@+id/country_flag"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
-                />
-           <!-- android:text="@{`Deaths : ` + country.totalDeaths}"-->
+                <TextView
+                    android:id="@+id/txt_newDeaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:gravity="end"
+                    android:textSize="@dimen/text_size_small"
+                    android:tag="binding_3"                            
+                    android:textColor="@color/lext_color_dark_gray"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_newCase"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txt_newCase"
+                    app:layout_constraintTop_toTopOf="parent"
 
-            <TextView
-                android:id="@+id/txt_newCase"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginRight="4dp"
-                android:gravity="end"
-                android:textSize="@dimen/text_size_small"
+                    />
 
-                android:textColor="@color/lext_color_dark_gray"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/country_name"
-                app:layout_constraintTop_toBottomOf="@+id/txt_newDeaths" />
-      <!--      android:text="@{`Cases : ` + country.totalConfirmed}"-->
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/txt_newCase"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginRight="4dp"
+                    android:gravity="end"
+                    android:textSize="@dimen/text_size_small"
+                    android:tag="binding_4"                              
+                    android:textColor="@color/lext_color_dark_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/country_name"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_newDeaths" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
          

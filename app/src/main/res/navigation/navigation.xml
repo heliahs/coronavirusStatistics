@@ -15,4 +15,5 @@
         android:id="@+id/detailFragment"
         android:name="com.hh.coronalastupdate.fragments.DetailFragment"
         android:label="DetailFragment" />
+
 </navigation>

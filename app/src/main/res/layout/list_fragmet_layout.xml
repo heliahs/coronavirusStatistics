@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-  <!--  <data>
+    <data>
         <variable
             name="viewModel"
-            type="com.hh.coronadata.viewmodel.ListViewModel" />
-    </data>-->
+            type="com.hh.coronalastupdate.viewmodels.ListViewModel" />
+    </data>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
         android:id="@+id/swiperefresh"

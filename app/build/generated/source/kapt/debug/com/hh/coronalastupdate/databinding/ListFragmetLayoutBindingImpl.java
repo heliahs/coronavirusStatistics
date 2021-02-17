@@ -51,7 +51,7 @@ public class ListFragmetLayoutBindingImpl extends ListFragmetLayoutBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x1L;
+                mDirtyFlags = 0x2L;
         }
         requestRebind();
     }
@@ -69,7 +69,17 @@ public class ListFragmetLayoutBindingImpl extends ListFragmetLayoutBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
+        if (BR.viewModel == variableId) {
+            setViewModel((com.hh.coronalastupdate.viewmodels.ListViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
             return variableSet;
+    }
+
+    public void setViewModel(@Nullable com.hh.coronalastupdate.viewmodels.ListViewModel ViewModel) {
+        this.mViewModel = ViewModel;
     }
 
     @Override
@@ -93,7 +103,8 @@ public class ListFragmetLayoutBindingImpl extends ListFragmetLayoutBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): null
+        flag 0 (0x1L): viewModel
+        flag 1 (0x2L): null
     flag mapping end*/
     //end
 }

@@ -5,14 +5,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 
 
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 
 
-import com.hh.coronadata.viewmodels.ListViewModel
+import com.hh.coronalastupdate.viewmodels.ListViewModel
+import com.hh.coronalastupdate.R
+import com.hh.coronalastupdate.adapters.MyAdapterDataListener
+import com.hh.coronalastupdate.adapters.MyNewListAdapter
 import com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
 
 
@@ -41,27 +48,24 @@ myAdapter()
 
 binding = ListFragmetLayoutBinding.inflate(inflater)
 
-/*
         val adapter = MyNewListAdapter(MyAdapterDataListener { country ->
 
             viewModel.displayDetails(country)
 
-           // sleepTrackerViewModel.onSleepNightClicked(nightId)
         })
 
 
 
         binding.recyclerView.adapter = adapter
-        binding.recyclerView.layoutManager=LinearLayoutManager(activity)
+        binding.recyclerView.layoutManager= LinearLayoutManager(activity)
 
-        viewModel.global.observe(viewLifecycleOwner, Observer {
+       /* viewModel.global.observe(viewLifecycleOwner, Observer {
             binding.totalCases.text="TotalCases : "+it.TotalConfirmed.toString()
             binding.totalDeaths.text="TotalDeaths : "+it.TotalDeaths.toString()
             binding.totalReooverd.text="TotalRecovered : "+it.TotalRecovered.toString()
-        })
+        })*/
         viewModel.coronaItems.observe(viewLifecycleOwner, Observer {
 
-           // adapters.setData(it)
             adapter.submitList(it)
 
         })
@@ -89,30 +93,33 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
 
         viewModel.navigateToSelectedCountry.observe(viewLifecycleOwner, Observer {
             if ( null != it ) {
-             *//* this.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(it))
-               // this.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
-                viewModel.displayDetailsComplete()*//*
+             // this.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(it))
+               this.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
+                viewModel.displayDetailsComplete()
             }
 
         })
 
-        *//*viewModel.playlist.observe(viewLifecycleOwner, Observer {
+        viewModel.playlist.observe(viewLifecycleOwner, Observer {
             it?.apply {
                 adapter.submitList(it)
             }
 
-        })*//*
-*//*
+        })
+
 viewModel.globalNew.observe(viewLifecycleOwner, Observer {
-    binding.totalCases.text="TotalCases : "+it.TotalConfirmed.toString()
-    binding.totalDeaths.text="TotalDeaths : "+it.TotalDeaths.toString()
-    binding.totalReooverd.text="TotalRecovered : "+it.TotalRecovered.toString()
-})*//*
+    it?.let {
+        binding.totalCases.text="TotalCases : "+it.TotalConfirmed.toString()
+        binding.totalDeaths.text="TotalDeaths : "+it.TotalDeaths.toString()
+        binding.totalReooverd.text="TotalRecovered : "+it.TotalRecovered.toString()
+    }
+
+})
         binding.swiperefresh.setOnRefreshListener {
 
-         //   viewModel.refreshDataFromRepository()
+           viewModel.refreshDataFromRepository()
             binding.swiperefresh.isRefreshing = false
-        }*/
+        }
 
         return binding.root
     }

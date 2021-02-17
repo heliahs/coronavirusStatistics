@@ -3,11 +3,11 @@
                                                        
                                                    
 
-  <!--  <data>
-        <variable
-            name="viewModel"
-            type="com.hh.coronadata.viewmodel.ListViewModel" />
-    </data>-->
+    
+                 
+                            
+                                                                      
+           
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 
         android:id="@+id/swiperefresh"

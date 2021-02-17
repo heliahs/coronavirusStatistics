@@ -10,11 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.hh.coronalastupdate.R;
+import com.hh.coronalastupdate.viewmodels.ListViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -43,6 +45,9 @@ public abstract class ListFragmetLayoutBinding extends ViewDataBinding {
   @NonNull
   public final LinearLayout worldDataContainer;
 
+  @Bindable
+  protected ListViewModel mViewModel;
+
   protected ListFragmetLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ConstraintLayout mainContainer, RecyclerView recyclerView, ImageView statusImage,
       SwipeRefreshLayout swiperefresh, TextView totalCases, TextView totalDeaths,
@@ -56,6 +61,13 @@ public abstract class ListFragmetLayoutBinding extends ViewDataBinding {
     this.totalDeaths = totalDeaths;
     this.totalReooverd = totalReooverd;
     this.worldDataContainer = worldDataContainer;
+  }
+
+  public abstract void setViewModel(@Nullable ListViewModel viewModel);
+
+  @Nullable
+  public ListViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull
