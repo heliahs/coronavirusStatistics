@@ -47,7 +47,7 @@ public class ListItemsLayoutBindingImpl extends ListItemsLayoutBinding  {
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x1L;
+                mDirtyFlags = 0x8L;
         }
         requestRebind();
     }
@@ -65,7 +65,29 @@ public class ListItemsLayoutBindingImpl extends ListItemsLayoutBinding  {
     @Override
     public boolean setVariable(int variableId, @Nullable Object variable)  {
         boolean variableSet = true;
+        if (BR.flag == variableId) {
+            setFlag((com.hh.coronalastupdate.classes.CountryData) variable);
+        }
+        else if (BR.country == variableId) {
+            setCountry((com.hh.coronalastupdate.models.Country) variable);
+        }
+        else if (BR.clickListener == variableId) {
+            setClickListener((com.hh.coronalastupdate.adapters.MyAdapterDataListener) variable);
+        }
+        else {
+            variableSet = false;
+        }
             return variableSet;
+    }
+
+    public void setFlag(@Nullable com.hh.coronalastupdate.classes.CountryData Flag) {
+        this.mFlag = Flag;
+    }
+    public void setCountry(@Nullable com.hh.coronalastupdate.models.Country Country) {
+        this.mCountry = Country;
+    }
+    public void setClickListener(@Nullable com.hh.coronalastupdate.adapters.MyAdapterDataListener ClickListener) {
+        this.mClickListener = ClickListener;
     }
 
     @Override
@@ -89,7 +111,10 @@ public class ListItemsLayoutBindingImpl extends ListItemsLayoutBinding  {
     // dirty flag
     private  long mDirtyFlags = 0xffffffffffffffffL;
     /* flag mapping
-        flag 0 (0x1L): null
+        flag 0 (0x1L): flag
+        flag 1 (0x2L): country
+        flag 2 (0x3L): clickListener
+        flag 3 (0x4L): null
     flag mapping end*/
     //end
 }

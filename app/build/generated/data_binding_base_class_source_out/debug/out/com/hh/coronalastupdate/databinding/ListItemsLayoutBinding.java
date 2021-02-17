@@ -8,9 +8,13 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.hh.coronalastupdate.R;
+import com.hh.coronalastupdate.adapters.MyAdapterDataListener;
+import com.hh.coronalastupdate.classes.CountryData;
+import com.hh.coronalastupdate.models.Country;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -27,6 +31,15 @@ public abstract class ListItemsLayoutBinding extends ViewDataBinding {
   @NonNull
   public final TextView txtNewDeaths;
 
+  @Bindable
+  protected Country mCountry;
+
+  @Bindable
+  protected CountryData mFlag;
+
+  @Bindable
+  protected MyAdapterDataListener mClickListener;
+
   protected ListItemsLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageView countryFlag, TextView countryName, TextView txtNewCase, TextView txtNewDeaths) {
     super(_bindingComponent, _root, _localFieldCount);
@@ -34,6 +47,27 @@ public abstract class ListItemsLayoutBinding extends ViewDataBinding {
     this.countryName = countryName;
     this.txtNewCase = txtNewCase;
     this.txtNewDeaths = txtNewDeaths;
+  }
+
+  public abstract void setCountry(@Nullable Country country);
+
+  @Nullable
+  public Country getCountry() {
+    return mCountry;
+  }
+
+  public abstract void setFlag(@Nullable CountryData flag);
+
+  @Nullable
+  public CountryData getFlag() {
+    return mFlag;
+  }
+
+  public abstract void setClickListener(@Nullable MyAdapterDataListener clickListener);
+
+  @Nullable
+  public MyAdapterDataListener getClickListener() {
+    return mClickListener;
   }
 
   @NonNull

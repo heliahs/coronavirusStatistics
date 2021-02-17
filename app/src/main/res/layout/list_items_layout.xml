@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
    >
 
- <!--   <data>
+    <data>
         <variable
             name="country"
             type="com.hh.coronalastupdate.models.Country"/>
@@ -18,7 +18,7 @@
             name="clickListener"
             type="com.hh.coronalastupdate.adapters.MyAdapterDataListener" />
 
-    </data>-->
+    </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout
 

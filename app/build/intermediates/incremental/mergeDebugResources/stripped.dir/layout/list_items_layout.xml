@@ -4,21 +4,21 @@
                                                        
     
 
- <!--   <data>
-        <variable
-            name="country"
-            type="com.hh.coronalastupdate.models.Country"/>
+    
+                 
+                          
+                                                           
 
 
 
-        <variable
-            name="flag"
-            type="com.hh.coronalastupdate.classes.CountryData"/>
-        <variable
-            name="clickListener"
-            type="com.hh.coronalastupdate.adapters.MyAdapterDataListener" />
+                 
+                       
+                                                                
+                 
+                                
+                                                                            
 
-    </data>-->
+           
 
 <androidx.constraintlayout.widget.ConstraintLayout
 
