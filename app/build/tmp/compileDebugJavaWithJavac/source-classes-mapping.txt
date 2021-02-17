@@ -1,5 +1,8 @@
 com/hh/coronalastupdate/BR.java
  com.hh.coronalastupdate.BR
+com/hh/coronalastupdate/db/CoronaDataDatabase_Impl.java
+ com.hh.coronalastupdate.db.CoronaDataDatabase_Impl
+ com.hh.coronalastupdate.db.CoronaDataDatabase_Impl$1
 com/hh/coronalastupdate/DataBinderMapperImpl.java
  com.hh.coronalastupdate.DataBinderMapperImpl
  com.hh.coronalastupdate.DataBinderMapperImpl$InnerBrLookup
@@ -8,6 +11,10 @@ com/hh/coronalastupdate/databinding/ListItemsLayoutBinding.java
  com.hh.coronalastupdate.databinding.ListItemsLayoutBinding
 androidx/databinding/DataBinderMapperImpl.java
  androidx.databinding.DataBinderMapperImpl
+com/hh/coronalastupdate/db/GlobalDao_Impl.java
+ com.hh.coronalastupdate.db.GlobalDao_Impl
+ com.hh.coronalastupdate.db.GlobalDao_Impl$1
+ com.hh.coronalastupdate.db.GlobalDao_Impl$2
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/hh/coronalastupdate/BuildConfig.java
@@ -20,6 +27,10 @@ com/hh/coronalastupdate/databinding/FirstPageActivityBindingImpl.java
  com.hh.coronalastupdate.databinding.FirstPageActivityBindingImpl
 com/hh/coronalastupdate/databinding/ListItemsLayoutBindingImpl.java
  com.hh.coronalastupdate.databinding.ListItemsLayoutBindingImpl
+com/hh/coronalastupdate/db/CoronaInfoDao_Impl.java
+ com.hh.coronalastupdate.db.CoronaInfoDao_Impl
+ com.hh.coronalastupdate.db.CoronaInfoDao_Impl$1
+ com.hh.coronalastupdate.db.CoronaInfoDao_Impl$2
 com/hh/coronalastupdate/databinding/FragmentDetailLayoutBinding.java
  com.hh.coronalastupdate.databinding.FragmentDetailLayoutBinding
 com/hh/coronalastupdate/databinding/ListFragmetLayoutBinding.java

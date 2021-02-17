@@ -1,6 +1,7 @@
 package com.hh.coronalastupdate.models
 
 import android.os.Parcelable
+import com.hh.coronalastupdate.db.TableCountries
 
 
 import kotlinx.android.parcel.Parcelize
@@ -59,7 +60,6 @@ fun CoronaModel.asDomainModel(): List<Country> {
 
 
 
-/*
 fun CoronaModel.asDatabaseModel(): List<TableCountries> {
     return Countries.map {
         TableCountries(
@@ -77,7 +77,6 @@ fun CoronaModel.asDatabaseModel(): List<TableCountries> {
     }
 }
 
-*/
 
 
 
