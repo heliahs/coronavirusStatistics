@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/first_page_activity.xml",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/first_page_activity.xml"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_fragmet_layout.xml",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/list_fragmet_layout.xml"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_detail_layout.xml",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/fragment_detail_layout.xml"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_items_layout.xml",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/list_items_layout.xml"
+    }
+]

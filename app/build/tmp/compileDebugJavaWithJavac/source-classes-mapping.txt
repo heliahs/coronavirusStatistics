@@ -1,0 +1,34 @@
+com/hh/coronalastupdate/BR.java
+ com.hh.coronalastupdate.BR
+com/hh/coronalastupdate/DataBinderMapperImpl.java
+ com.hh.coronalastupdate.DataBinderMapperImpl
+ com.hh.coronalastupdate.DataBinderMapperImpl$InnerBrLookup
+ com.hh.coronalastupdate.DataBinderMapperImpl$InnerLayoutIdLookup
+com/hh/coronalastupdate/databinding/ListItemsLayoutBinding.java
+ com.hh.coronalastupdate.databinding.ListItemsLayoutBinding
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/hh/coronalastupdate/BuildConfig.java
+ com.hh.coronalastupdate.BuildConfig
+com/hh/coronalastupdate/databinding/ListFragmetLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.ListFragmetLayoutBindingImpl
+com/hh/coronalastupdate/DataBindingTriggerClass.java
+ com.hh.coronalastupdate.DataBindingTriggerClass
+com/hh/coronalastupdate/databinding/FirstPageActivityBindingImpl.java
+ com.hh.coronalastupdate.databinding.FirstPageActivityBindingImpl
+com/hh/coronalastupdate/databinding/ListItemsLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.ListItemsLayoutBindingImpl
+com/hh/coronalastupdate/databinding/FragmentDetailLayoutBinding.java
+ com.hh.coronalastupdate.databinding.FragmentDetailLayoutBinding
+com/hh/coronalastupdate/databinding/ListFragmetLayoutBinding.java
+ com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
+com/hh/coronalastupdate/databinding/FragmentDetailLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.FragmentDetailLayoutBindingImpl
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/hh/coronalastupdate/databinding/FirstPageActivityBinding.java
+ com.hh.coronalastupdate.databinding.FirstPageActivityBinding
+com/hh/coronalastupdate/fragments/ListFragmentDirections.java
+ com.hh.coronalastupdate.fragments.ListFragmentDirections

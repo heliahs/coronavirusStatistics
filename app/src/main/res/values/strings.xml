@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">CoronaLastUpdate</string>
+    <string name="first_page_btn">Show Data</string>
+    <string name="TotalDeaths">TotalDeaths : %s</string>
+    <string name="TotalConfirmed">TotalConfirmed : %s</string>
 </resources>
