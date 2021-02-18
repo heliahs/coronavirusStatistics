@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.hh.coronalastupdate.viewmodels.ListViewModel
 import com.hh.coronalastupdate.R
 import com.hh.coronalastupdate.adapters.MyAdapterDataListener
-import com.hh.coronalastupdate.adapters.MyNewListAdapter
+import com.hh.coronalastupdate.adapters.MyListAdapter
 import com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
 
 
@@ -48,7 +48,7 @@ myAdapter()
 
 binding = ListFragmetLayoutBinding.inflate(inflater)
 
-        val adapter = MyNewListAdapter(MyAdapterDataListener { country ->
+        val adapter = MyListAdapter(MyAdapterDataListener { country ->
 
             viewModel.displayDetails(country)
 
@@ -93,8 +93,9 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
 
         viewModel.navigateToSelectedCountry.observe(viewLifecycleOwner, Observer {
             if ( null != it ) {
-             // this.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(it))
-               this.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
+             this.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(it))
+              // this.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
+
                 viewModel.displayDetailsComplete()
             }
 

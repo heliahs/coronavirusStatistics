@@ -21,6 +21,10 @@ com/hh/coronalastupdate/BuildConfig.java
  com.hh.coronalastupdate.BuildConfig
 com/hh/coronalastupdate/databinding/ListFragmetLayoutBindingImpl.java
  com.hh.coronalastupdate.databinding.ListFragmetLayoutBindingImpl
+com/hh/coronalastupdate/fragments/DetailFragmentArgs.java
+ com.hh.coronalastupdate.fragments.DetailFragmentArgs
+ com.hh.coronalastupdate.fragments.DetailFragmentArgs$1
+ com.hh.coronalastupdate.fragments.DetailFragmentArgs$Builder
 com/hh/coronalastupdate/DataBindingTriggerClass.java
  com.hh.coronalastupdate.DataBindingTriggerClass
 com/hh/coronalastupdate/generated/callback/OnClickListener.java
@@ -46,3 +50,5 @@ com/hh/coronalastupdate/databinding/FirstPageActivityBinding.java
  com.hh.coronalastupdate.databinding.FirstPageActivityBinding
 com/hh/coronalastupdate/fragments/ListFragmentDirections.java
  com.hh.coronalastupdate.fragments.ListFragmentDirections
+ com.hh.coronalastupdate.fragments.ListFragmentDirections$1
+ com.hh.coronalastupdate.fragments.ListFragmentDirections$ActionListFragmentToDetailFragment

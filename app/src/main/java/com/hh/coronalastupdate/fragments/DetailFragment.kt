@@ -4,14 +4,29 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
+import com.github.mikephil.charting.charts.PieChart
+import com.github.mikephil.charting.components.Description
+import com.github.mikephil.charting.components.Legend
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
+import com.hh.coronalastupdate.R
+import com.hh.coronalastupdate.classes.CountryData
 import com.hh.coronalastupdate.databinding.FragmentDetailLayoutBinding
+import com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
+import com.hh.coronalastupdate.models.Country
+import com.hh.coronalastupdate.viewmodels.DetailViewModel
+import com.hh.coronalastupdate.viewmodels.DetailViewModelFactory
 
 
 class DetailFragment : Fragment() {
 
-
+    private lateinit var binding : FragmentDetailLayoutBinding
+    private lateinit var   yData : FloatArray
     private val xData = arrayOf("Deaths", "Recovered", "Active")
 
     override fun onCreateView(
@@ -19,11 +34,11 @@ class DetailFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-      //  val application = requireNotNull(activity).application
-        val binding = FragmentDetailLayoutBinding.inflate(inflater)
+
+         binding = FragmentDetailLayoutBinding.inflate(inflater)
         binding.lifecycleOwner = this
         val application = requireNotNull(activity).application
-/*        val country = DetailFragmentArgs.fromBundle(requireArguments()).country
+        val country = DetailFragmentArgs.fromBundle(requireArguments()).country
 
 
 
@@ -32,89 +47,83 @@ class DetailFragment : Fragment() {
             this, viewModelFactory
         ).get(DetailViewModel::class.java)
 
-        val yData = floatArrayOf(
+         yData = floatArrayOf(
             country.TotalDeaths.toFloat(), country.TotalRecovered.toFloat(), ActiveCases(
                 country
             ).toFloat()
         )
 
        binding.countryName.text =country.Country
-
-
-        binding.countryFlag.setImageResource(CountryData().getFlagMasterResID(country.CountryCode))*/
+        binding.countryFlag.setImageResource(CountryData().getFlagMasterResID(country.CountryCode))
 
 
 
-     /*   binding.chart1.also {
-
-            val description: Description = it.getDescription()
-            description.text="Coronavirous PieChart"
-            it.isRotationEnabled = true
-
-            it.holeRadius = 30f
-            it.setTransparentCircleAlpha(0)
-
-
-            val yEntrys: ArrayList<PieEntry> = ArrayList()
-
-            val xEntrys: ArrayList<String> = ArrayList()
-
-
-            for (i in 0 until yData.size) {
-                yEntrys.add(PieEntry(yData[i], xData[i]))
-            }
-
-
-            for (i in 0 until xData.size) {
-                xEntrys.add(xData[i])
+        binding.chart1.also {
+        initChart(it)
 
             }
-
-
-            val pieDataSet = PieDataSet(yEntrys, "")
-            pieDataSet.setDrawValues(false)
-            pieDataSet.sliceSpace = 2f
-            pieDataSet.valueTextSize = 8f
-
-            val colors: ArrayList<Int> = ArrayList()
-            colors.add(ContextCompat.getColor(requireContext(), R.color.red))
-            colors.add(ContextCompat.getColor(requireContext(), R.color.green))
-            colors.add(ContextCompat.getColor(requireContext(), R.color.yellow))
-
-
-            pieDataSet.colors = colors
-            it.setDrawSliceText(false);
-
-
-            val legend: Legend = it.legend
-           legend.form = Legend.LegendForm.CIRCLE
-
-
-            legend.verticalAlignment = Legend.LegendVerticalAlignment.BOTTOM
-            legend.horizontalAlignment = Legend.LegendHorizontalAlignment.LEFT
-            legend.orientation = Legend.LegendOrientation.HORIZONTAL
-
-
-            it.setOnChartValueSelectedListener(object : OnChartValueSelectedListener {
-
-
-                override fun onValueSelected(e: Entry?, h: Highlight?) {
-                    val string: String = ""
-
-                }
-
-                override fun onNothingSelected() {}
-            })
-
-
-            val pieData = PieData(pieDataSet)
-            it.animateY(1000)
-            it.data = pieData
-            it.invalidate()
-
-            }*/
 
         return binding.root
+    }
+
+    private fun initChart(pieChart: PieChart) {
+        val description: Description = pieChart.getDescription()
+        description.text=" "
+
+        pieChart.isRotationEnabled = true
+
+        pieChart.holeRadius = 30f
+        pieChart.setTransparentCircleAlpha(0)
+
+
+        val yEntrys: ArrayList<PieEntry> = ArrayList()
+
+        val xEntrys: ArrayList<String> = ArrayList()
+
+
+        for (i in 0 until yData.size) {
+            yEntrys.add(PieEntry(yData[i], xData[i]))
+        }
+
+
+        for (i in 0 until xData.size) {
+            xEntrys.add(xData[i])
+
+        }
+
+
+        val pieDataSet = PieDataSet(yEntrys, "")
+        pieDataSet.setDrawValues(false)
+        pieDataSet.sliceSpace = 2f
+        pieDataSet.valueTextSize = 8f
+
+        val colors: ArrayList<Int> = ArrayList()
+        colors.add(ContextCompat.getColor(requireContext(), R.color.red))
+        colors.add(ContextCompat.getColor(requireContext(), R.color.green))
+        colors.add(ContextCompat.getColor(requireContext(), R.color.yellow))
+
+
+        pieDataSet.colors = colors
+        pieChart.setDrawSliceText(false);
+
+
+        val legend: Legend = pieChart.legend
+        legend.form = Legend.LegendForm.CIRCLE
+
+
+        legend.verticalAlignment = Legend.LegendVerticalAlignment.BOTTOM
+        legend.horizontalAlignment = Legend.LegendHorizontalAlignment.CENTER
+        legend.orientation = Legend.LegendOrientation.HORIZONTAL
+
+
+
+
+
+        val pieData = PieData(pieDataSet)
+        pieChart.animateY(1000)
+        pieChart.data = pieData
+        pieChart.invalidate()
+
     }
 
 
@@ -124,7 +133,7 @@ class DetailFragment : Fragment() {
 
 
 
-    /*fun ActiveCases(country: Country): Long{
+    fun ActiveCases(country: Country): Long{
       return  country.TotalConfirmed - (country.TotalDeaths + country.TotalRecovered)
-    }*/
+    }
 }

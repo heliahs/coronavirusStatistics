@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.hh.coronalastupdate.models.Country
-import com.hh.coronalastupdate.models.Global
+
 
 
 @Entity
@@ -44,20 +44,7 @@ data class TableGlobal (
 )
 
 
-fun List<TableGlobal>.asDomainModel2(): List<Global> {
-    return map {
-        Global(
-                NewConfirmed = it.NewConfirmed,
-                TotalConfirmed = it.TotalConfirmed,
-                TotalDeaths = it.TotalDeaths,
-                NewDeaths = it.NewDeaths,
-                NewRecovered = it.NewConfirmed,
-                TotalRecovered = it.TotalRecovered,
 
-
-        )
-    }
-}
 
 fun List<TableCountries>.asDomainModel(): List<Country> {
     return map {

@@ -2,6 +2,7 @@ package com.hh.coronalastupdate.models
 
 import android.os.Parcelable
 import com.hh.coronalastupdate.db.TableCountries
+import com.hh.coronalastupdate.db.TableGlobal
 
 
 import kotlinx.android.parcel.Parcelize
@@ -35,32 +36,21 @@ data class Global(
 
 )
 
-/*
 
-fun CoronaModel.asDomainModel(): List<Country> {
-    return Countries.map {
-        Country(
-            Country = it.Country,
-            CountryCode = it.CountryCode,
-            Slug = it.Slug,
-            NewConfirmed = it.NewConfirmed,
-            TotalConfirmed = it.TotalConfirmed,
-            TotalDeaths = it.TotalDeaths,
-            NewDeaths = it.NewDeaths,
-            NewRecovered = it.NewConfirmed,
-            TotalRecovered = it.TotalRecovered,
-            Date = it.Date
-          )
-    }
-
+fun CoronaModel.asGlobalDatabaseModel(global: Global):TableGlobal {
+   return TableGlobal( NewConfirmed = global.NewConfirmed,
+            TotalConfirmed = global.TotalConfirmed,
+            TotalDeaths = global.TotalDeaths,
+            NewDeaths = global.NewDeaths,
+            NewRecovered = global.NewConfirmed,
+            TotalRecovered = global.TotalRecovered )
 
 }
-*/
 
 
 
 
-fun CoronaModel.asDatabaseModel(): List<TableCountries> {
+fun CoronaModel.asCountryDatabaseModel(): List<TableCountries> {
     return Countries.map {
         TableCountries(
             Country = it.Country,

@@ -5,9 +5,8 @@ import androidx.lifecycle.Transformations
 import com.hh.coronalastupdate.db.CoronaDataDatabase
 import com.hh.coronalastupdate.db.TableGlobal
 import com.hh.coronalastupdate.db.asDomainModel
-import com.hh.coronalastupdate.models.Country
-import com.hh.coronalastupdate.models.Global
-import com.hh.coronalastupdate.models.asDatabaseModel
+import com.hh.coronalastupdate.models.*
+
 import com.hh.coronalastupdate.network.MarsApi.retrofitService
 
 
@@ -28,16 +27,8 @@ class Repository (private val database: CoronaDataDatabase) {
         withContext(Dispatchers.IO) {
             val coronaData = retrofitService.getCoronaDataList()
             val global =coronaData.Global
-      database.globalDao.insertAllGlobal(
-          TableGlobal( NewConfirmed = global.NewConfirmed,
-              TotalConfirmed = global.TotalConfirmed,
-              TotalDeaths = global.TotalDeaths,
-              NewDeaths = global.NewDeaths,
-              NewRecovered = global.NewConfirmed,
-              TotalRecovered = global.TotalRecovered )
-      )
-
-            database.coronaInfoDao.insertAll(coronaData.asDatabaseModel())
+      database.globalDao.insertAllGlobal(coronaData.asGlobalDatabaseModel(global))
+            database.coronaInfoDao.insertAll(coronaData.asCountryDatabaseModel())
         }
 
     }

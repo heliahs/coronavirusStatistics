@@ -10,10 +10,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.github.mikephil.charting.charts.PieChart;
 import com.hh.coronalastupdate.R;
+import com.hh.coronalastupdate.viewmodels.DetailViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -54,6 +56,9 @@ public abstract class FragmentDetailLayoutBinding extends ViewDataBinding {
   @NonNull
   public final TextView totalRecovered;
 
+  @Bindable
+  protected DetailViewModel mViewModel;
+
   protected FragmentDetailLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
       CardView cardCases, CardView cardDeaths, CardView cardRecovered, PieChart chart1,
       ConstraintLayout countryContainer, ImageView countryFlag, TextView countryName,
@@ -72,6 +77,13 @@ public abstract class FragmentDetailLayoutBinding extends ViewDataBinding {
     this.totalCases = totalCases;
     this.totalDeaths = totalDeaths;
     this.totalRecovered = totalRecovered;
+  }
+
+  public abstract void setViewModel(@Nullable DetailViewModel viewModel);
+
+  @Nullable
+  public DetailViewModel getViewModel() {
+    return mViewModel;
   }
 
   @NonNull
