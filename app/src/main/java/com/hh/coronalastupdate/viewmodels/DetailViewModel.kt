@@ -12,11 +12,10 @@ class DetailViewModel(country: Country,
 ) : AndroidViewModel(app){
     private val _selectedCountry = MutableLiveData<Country>()
 
-    // The external LiveData for the SelectedProperty
     val selectedCountry: LiveData<Country>
         get() = _selectedCountry
 
-    // Initialize the _selectedProperty MutableLiveData
+
     init {
         _selectedCountry.value = country
     }

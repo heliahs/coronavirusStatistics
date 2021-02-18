@@ -1862,6 +1862,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable icon_background
 drawable image
 drawable loading_animation
 drawable loading_img
@@ -1898,7 +1899,6 @@ drawable shadow_background
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-drawable w
 drawable world
 id ALT
 id BOTTOM_END
@@ -2444,10 +2444,14 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap icon
+mipmap icon_foreground
+mipmap icon_round
 navigation navigation
 plurals mtrl_badge_content_description
 string TotalConfirmed
 string TotalDeaths
+string TotalRecovered
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2487,7 +2491,6 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string first_page_btn
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

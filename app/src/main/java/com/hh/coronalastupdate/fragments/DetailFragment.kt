@@ -17,7 +17,6 @@ import com.github.mikephil.charting.data.PieEntry
 import com.hh.coronalastupdate.R
 import com.hh.coronalastupdate.classes.CountryData
 import com.hh.coronalastupdate.databinding.FragmentDetailLayoutBinding
-import com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
 import com.hh.coronalastupdate.models.Country
 import com.hh.coronalastupdate.viewmodels.DetailViewModel
 import com.hh.coronalastupdate.viewmodels.DetailViewModelFactory
@@ -48,7 +47,7 @@ class DetailFragment : Fragment() {
         ).get(DetailViewModel::class.java)
 
          yData = floatArrayOf(
-            country.TotalDeaths.toFloat(), country.TotalRecovered.toFloat(), ActiveCases(
+            country.TotalDeaths.toFloat(), country.TotalRecovered.toFloat(), activeCases(
                 country
             ).toFloat()
         )
@@ -127,13 +126,8 @@ class DetailFragment : Fragment() {
     }
 
 
-    private fun addData() {
 
-    }
-
-
-
-    fun ActiveCases(country: Country): Long{
+    private fun activeCases(country: Country): Long{
       return  country.TotalConfirmed - (country.TotalDeaths + country.TotalRecovered)
     }
 }

@@ -1,6 +1,7 @@
 package com.hh.coronalastupdate.fragments
 
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,11 +36,9 @@ private val viewModel : ListViewModel by lazy {
     }
     ViewModelProvider(this).get(ListViewModel(activity!!.application)::class.java)
 }
-    /*private val adapters  by lazy {
-myAdapter()
 
-    }*/
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -47,11 +46,8 @@ myAdapter()
     ): View? {
 
 binding = ListFragmetLayoutBinding.inflate(inflater)
-
         val adapter = MyListAdapter(MyAdapterDataListener { country ->
-
             viewModel.displayDetails(country)
-
         })
 
 
@@ -59,16 +55,9 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
         binding.recyclerView.adapter = adapter
         binding.recyclerView.layoutManager= LinearLayoutManager(activity)
 
-       /* viewModel.global.observe(viewLifecycleOwner, Observer {
-            binding.totalCases.text="TotalCases : "+it.TotalConfirmed.toString()
-            binding.totalDeaths.text="TotalDeaths : "+it.TotalDeaths.toString()
-            binding.totalReooverd.text="TotalRecovered : "+it.TotalRecovered.toString()
-        })*/
-        viewModel.coronaItems.observe(viewLifecycleOwner, Observer {
 
-            adapter.submitList(it)
 
-        })
+
         viewModel.status.observe(viewLifecycleOwner, Observer {
             when (it) {
                 ListViewModel.ApiStatus.LOADING -> {
@@ -82,7 +71,7 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
                     binding.mainContainer.visibility=View.VISIBLE
                     binding.statusImage.visibility=View.GONE
                     Toast.makeText(context,"error",Toast.LENGTH_LONG).show()
-                   // binding.statusImage.setImageResource(R.drawable.ic_connection_error)
+
                 }
                 ListViewModel.ApiStatus.DONE -> {
                     binding.statusImage.visibility = View.GONE
@@ -94,25 +83,23 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
         viewModel.navigateToSelectedCountry.observe(viewLifecycleOwner, Observer {
             if ( null != it ) {
              this.findNavController().navigate(ListFragmentDirections.actionListFragmentToDetailFragment(it))
-              // this.findNavController().navigate(R.id.action_listFragment_to_detailFragment)
-
                 viewModel.displayDetailsComplete()
             }
 
         })
 
-        viewModel.playlist.observe(viewLifecycleOwner, Observer {
+        viewModel.countryList.observe(viewLifecycleOwner, Observer {
             it?.apply {
                 adapter.submitList(it)
             }
 
         })
 
-viewModel.globalNew.observe(viewLifecycleOwner, Observer {
+viewModel.global.observe(viewLifecycleOwner, Observer {
     it?.let {
-        binding.totalCases.text="TotalCases : "+it.TotalConfirmed.toString()
-        binding.totalDeaths.text="TotalDeaths : "+it.TotalDeaths.toString()
-        binding.totalReooverd.text="TotalRecovered : "+it.TotalRecovered.toString()
+        binding.totalCases.text= resources.getString(R.string.TotalConfirmed)+it.TotalConfirmed.toString()
+        binding.totalDeaths.text=resources.getString(R.string.TotalDeaths)+it.TotalDeaths.toString()
+        binding.totalReooverd.text=resources.getString(R.string.TotalRecovered)+it.TotalRecovered.toString()
     }
 
 })

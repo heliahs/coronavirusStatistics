@@ -68,8 +68,16 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_soviet_union.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxhdpi/icon.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_kuwait.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_kuwait.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/icon.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_tanzania.png.flat",
@@ -114,6 +122,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_israel.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_israel.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxxhdpi/icon.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_slovakia.png.flat",
@@ -316,6 +328,10 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_french_polynesia.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon_foreground.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-mdpi/icon_foreground.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_ireland.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_ireland.png"
     },
@@ -394,6 +410,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_comoros.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_comoros.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_foreground.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxhdpi/icon_foreground.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_aland.png.flat",
@@ -480,6 +500,10 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_niger.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-mdpi/icon.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_turkey.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_turkey.png"
     },
@@ -522,6 +546,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_georgia.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_georgia.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon_round.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xhdpi/icon_round.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_guam.png.flat",
@@ -582,6 +610,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon_round.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/icon_round.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_vatican_city.png.flat",
@@ -724,6 +756,10 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_fiji.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-mdpi_icon_round.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-mdpi/icon_round.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/layout_first_page_activity.xml.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/first_page_activity.xml"
     },
@@ -738,6 +774,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-hdpi_icon_foreground.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/icon_foreground.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_san_marino.png.flat",
@@ -782,6 +822,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_costa_rica.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_costa_rica.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon_foreground.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xhdpi/icon_foreground.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_north_korea.png.flat",
@@ -916,8 +960,16 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_sao_tome_and_principe.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xhdpi_icon.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xhdpi/icon.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_italy.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_italy.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_foreground.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxxhdpi/icon_foreground.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_burundi.png.flat",
@@ -984,12 +1036,16 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_tajikistan.png"
     },
     {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_w.png.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/w.png"
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_icon.xml.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-anydpi-v26/icon.xml"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_togo.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_togo.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_icon_round.xml.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-anydpi-v26/icon_round.xml"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
@@ -1032,6 +1088,10 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirus.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_round.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxxhdpi/icon_round.png"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_uganda.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_uganda.png"
     },
@@ -1058,6 +1118,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_algeria.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_algeria.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_icon_round.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-xxhdpi/icon_round.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_philippines.png.flat",
@@ -1114,6 +1178,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_russian_federation.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_russian_federation.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_icon_background.xml.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/icon_background.xml"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_saint_martin.png.flat",

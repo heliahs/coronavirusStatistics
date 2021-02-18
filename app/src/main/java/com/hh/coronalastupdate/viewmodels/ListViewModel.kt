@@ -17,25 +17,16 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
 
    private val repository = Repository(getDatabase(application))
 
-    val playlist = repository.listData
-    val globalNew =repository.globalData
+    val countryList = repository.listData
+    val global =repository.globalData
 
-/* val _list = MutableLiveData<CountryData>()
-    val list : LiveData<CountryData>
-    get() = _list*/
+
 
     val _status = MutableLiveData<ApiStatus>()
     val status : LiveData<ApiStatus>
     get() = _status
 
 
-    val _coronaItems = MutableLiveData<List<Country>>()
-    val coronaItems : LiveData<List<Country>>
-        get() = _coronaItems
-
-    val _global = MutableLiveData<Global>()
-    val global : LiveData<Global>
-        get() = _global
 
     val _navigateToSelectedCountry = MutableLiveData<Country>()
     val navigateToSelectedCountry : LiveData<Country>
@@ -56,7 +47,7 @@ init {
 
             } catch (networkError: IOException) {
                 Log.e("error" , networkError.message.toString())
-                if(playlist.value.isNullOrEmpty())
+                if(countryList.value.isNullOrEmpty())
                     _status.value =ApiStatus.ERROR
 
             }
