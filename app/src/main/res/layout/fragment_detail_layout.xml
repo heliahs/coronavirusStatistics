@@ -8,10 +8,12 @@
             name="viewModel"
             type="com.hh.coronalastupdate.viewmodels.DetailViewModel" />
     </data>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="@dimen/padding3">
 
 
@@ -20,7 +22,7 @@
             android:id="@+id/countryContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_x_l"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -29,7 +31,7 @@
                 android:id="@+id/country_flag"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                app:srcCompat="@drawable/earth"
+                app:srcCompat="@drawable/flag_united_kingdom"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -37,10 +39,9 @@
                 android:id="@+id/country_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:text="name"
+                android:layout_marginStart="@dimen/margin_l"
                 android:textColor="@color/black"
-                android:textSize="25dp"
+                android:textSize="@dimen/text_size_very_big"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/country_flag"
                 app:layout_constraintTop_toTopOf="@+id/country_flag"
@@ -182,10 +183,13 @@
             android:id="@+id/chart1"
             android:layout_width="300dp"
             android:layout_height="300dp"
+            android:layout_marginTop="@dimen/margin_x_l"
             app:layout_constraintTop_toBottomOf="@+id/card_recovered"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
 </layout>

@@ -3,6 +3,7 @@
     <dimen name="text_size_small">13sp</dimen>
     <dimen name="text_size_medium">15sp</dimen>
     <dimen name="text_size_big">20sp</dimen>
+    <dimen name="text_size_very_big">25sp</dimen>
 
     <dimen name="padding1">5dp</dimen>
     <dimen name="padding2">10dp</dimen>
@@ -12,4 +13,5 @@
     <dimen name="margin_s">5dp</dimen>
     <dimen name="margin_m">10dp</dimen>
     <dimen name="margin_l">15dp</dimen>
+    <dimen name="margin_x_l">30dp</dimen>
 </resources>

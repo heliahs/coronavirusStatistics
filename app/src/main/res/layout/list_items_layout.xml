@@ -63,7 +63,8 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/country_name"
+                    app:layout_constraintBottom_toBottomOf="@+id/country_name"
                     android:contentDescription="country flag"
                     app:imageUrl="@{country.countryCode.toLowerCase()}"
 
