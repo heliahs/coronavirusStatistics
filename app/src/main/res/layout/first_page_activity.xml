@@ -18,7 +18,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:speed="1dp"
-            app:src="@drawable/coronavirusblack" />
+            app:src="@drawable/coronavirusintro" />
 
 
 
