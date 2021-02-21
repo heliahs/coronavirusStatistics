@@ -13,7 +13,7 @@ import java.io.IOException
 
 
 class ListViewModel(application: Application) : AndroidViewModel(application) {
-    enum class ApiStatus { LOADING, ERROR, DONE }
+    enum class ApiStatus { LOADING, ERROR, DONE,TOAST_ERROR }
 
    private val repository = Repository(getDatabase(application))
 
@@ -39,17 +39,27 @@ init {
 
 
      fun refreshDataFromRepository() {
+         _status.value=ApiStatus.LOADING
         viewModelScope.launch {
             try {
                 repository.getData()
-
                 _status.value=ApiStatus.DONE
 
             } catch (networkError: IOException) {
-                Log.e("error" , networkError.message.toString())
+                Log.e("network error" , networkError.message.toString())
                 if(countryList.value.isNullOrEmpty())
                     _status.value =ApiStatus.ERROR
+                else
+                    _status.value =ApiStatus.TOAST_ERROR
 
+
+
+            } catch (e : Exception){
+                Log.e("error" , e.message.toString())
+                if(countryList.value.isNullOrEmpty())
+                    _status.value =ApiStatus.ERROR
+                else
+                    _status.value =ApiStatus.TOAST_ERROR
             }
         }
     }

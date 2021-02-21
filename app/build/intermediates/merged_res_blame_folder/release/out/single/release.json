@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/ic_launcher.png"
-    },
-    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/navigation_navigation.xml.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/navigation/navigation.xml"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_macedonia.png.flat",
@@ -66,6 +66,10 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_libya.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_libya.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_coronavirusintro.jpg.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirusintro.jpg"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_netherlands_antilles.png.flat",
@@ -242,10 +246,6 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_sao_tome_and_principe.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_sao_tome_and_principe.png"
-    },
-    {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_coronavirus.png.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirus.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_djibouti.png.flat",
@@ -770,10 +770,6 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_martinique.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_martinique.png"
-    },
-    {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_coronavirusblack.jpg.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirusblack.jpg"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_botswana.png.flat",

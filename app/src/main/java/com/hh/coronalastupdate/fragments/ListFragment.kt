@@ -61,16 +61,21 @@ binding = ListFragmetLayoutBinding.inflate(inflater)
         viewModel.status.observe(viewLifecycleOwner, Observer {
             when (it) {
                 ListViewModel.ApiStatus.LOADING -> {
-                    binding.statusImage.visibility = View.VISIBLE
-                    binding.mainContainer.visibility=View.VISIBLE
+                    binding.mainContainer.visibility=View.GONE
                     binding.statusImage.visibility=View.VISIBLE
                     binding.statusImage.setImageResource(R.drawable.loading_animation)
                 }
                 ListViewModel.ApiStatus.ERROR -> {
                     binding.statusImage.visibility = View.VISIBLE
+                    binding.mainContainer.visibility=View.GONE
+                    binding.statusImage.setImageResource(R.drawable.ic_connection_error)
+                    Toast.makeText(context,"something went wrong! please try again.",Toast.LENGTH_SHORT).show()
+
+                }
+                ListViewModel.ApiStatus.TOAST_ERROR -> {
+                    binding.statusImage.visibility = View.GONE
                     binding.mainContainer.visibility=View.VISIBLE
-                    binding.statusImage.visibility=View.GONE
-                    Toast.makeText(context,"error",Toast.LENGTH_LONG).show()
+                    Toast.makeText(context,"Server Error",Toast.LENGTH_SHORT).show()
 
                 }
                 ListViewModel.ApiStatus.DONE -> {

@@ -19,8 +19,8 @@ androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 com/hh/coronalastupdate/BuildConfig.java
  com.hh.coronalastupdate.BuildConfig
-com/hh/coronalastupdate/databinding/ListFragmetLayoutBindingImpl.java
- com.hh.coronalastupdate.databinding.ListFragmetLayoutBindingImpl
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 com/hh/coronalastupdate/fragments/DetailFragmentArgs.java
  com.hh.coronalastupdate.fragments.DetailFragmentArgs
  com.hh.coronalastupdate.fragments.DetailFragmentArgs$1
@@ -32,23 +32,23 @@ com/hh/coronalastupdate/generated/callback/OnClickListener.java
  com.hh.coronalastupdate.generated.callback.OnClickListener$Listener
 com/hh/coronalastupdate/databinding/FirstPageActivityBindingImpl.java
  com.hh.coronalastupdate.databinding.FirstPageActivityBindingImpl
-com/hh/coronalastupdate/databinding/ListItemsLayoutBindingImpl.java
- com.hh.coronalastupdate.databinding.ListItemsLayoutBindingImpl
+com/hh/coronalastupdate/fragments/ListFragmentDirections.java
+ com.hh.coronalastupdate.fragments.ListFragmentDirections
+ com.hh.coronalastupdate.fragments.ListFragmentDirections$1
+ com.hh.coronalastupdate.fragments.ListFragmentDirections$ActionListFragmentToDetailFragment
 com/hh/coronalastupdate/db/CoronaInfoDao_Impl.java
  com.hh.coronalastupdate.db.CoronaInfoDao_Impl
  com.hh.coronalastupdate.db.CoronaInfoDao_Impl$1
  com.hh.coronalastupdate.db.CoronaInfoDao_Impl$2
 com/hh/coronalastupdate/databinding/FragmentDetailLayoutBinding.java
  com.hh.coronalastupdate.databinding.FragmentDetailLayoutBinding
-com/hh/coronalastupdate/databinding/ListFragmetLayoutBinding.java
- com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
-com/hh/coronalastupdate/databinding/FragmentDetailLayoutBindingImpl.java
- com.hh.coronalastupdate.databinding.FragmentDetailLayoutBindingImpl
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
 com/hh/coronalastupdate/databinding/FirstPageActivityBinding.java
  com.hh.coronalastupdate.databinding.FirstPageActivityBinding
-com/hh/coronalastupdate/fragments/ListFragmentDirections.java
- com.hh.coronalastupdate.fragments.ListFragmentDirections
- com.hh.coronalastupdate.fragments.ListFragmentDirections$1
- com.hh.coronalastupdate.fragments.ListFragmentDirections$ActionListFragmentToDetailFragment
+com/hh/coronalastupdate/databinding/FragmentDetailLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.FragmentDetailLayoutBindingImpl
+com/hh/coronalastupdate/databinding/ListItemsLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.ListItemsLayoutBindingImpl
+com/hh/coronalastupdate/databinding/ListFragmetLayoutBinding.java
+ com.hh.coronalastupdate.databinding.ListFragmetLayoutBinding
+com/hh/coronalastupdate/databinding/ListFragmetLayoutBindingImpl.java
+ com.hh.coronalastupdate.databinding.ListFragmetLayoutBindingImpl

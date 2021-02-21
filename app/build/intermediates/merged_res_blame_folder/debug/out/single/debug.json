@@ -544,6 +544,10 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_transparent.png"
     },
     {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_coronavirusintro.jpg.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirusintro.jpg"
+    },
+    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_georgia.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_georgia.png"
     },
@@ -900,10 +904,6 @@
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_norway.png"
     },
     {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_coronavirusblack.jpg.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirusblack.jpg"
-    },
-    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/layout_list_fragmet_layout.xml.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/layout/list_fragmet_layout.xml"
     },
@@ -1078,10 +1078,6 @@
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_flag_venezuela.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/flag_venezuela.png"
-    },
-    {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/drawable_coronavirus.png.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/drawable/coronavirus.png"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_icon_round.png.flat",

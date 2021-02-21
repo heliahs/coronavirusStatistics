@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CoronaLastUpdate</string>
+    <string name="app_name">Corona Statistics</string>
     <string name="TotalRecovered">TotalRecovered : </string>
     <string name="TotalDeaths">TotalDeaths : </string>
     <string name="TotalConfirmed">TotalConfirmed : </string>

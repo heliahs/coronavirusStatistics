@@ -1,5 +1,6 @@
 package com.hh.coronalastupdate.repositories
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import com.hh.coronalastupdate.db.CoronaDataDatabase
@@ -7,10 +8,12 @@ import com.hh.coronalastupdate.db.asDomainModel
 import com.hh.coronalastupdate.models.*
 
 import com.hh.coronalastupdate.network.MarsApi.RETROFIT_SERVICE
+import com.hh.coronalastupdate.viewmodels.ListViewModel
 
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import java.io.IOException
 
 class Repository (private val database: CoronaDataDatabase) {
 
@@ -23,12 +26,15 @@ class Repository (private val database: CoronaDataDatabase) {
 
 
     suspend fun getData() {
-        withContext(Dispatchers.IO) {
-            val coronaData = RETROFIT_SERVICE.getCoronaDataList()
-            val global =coronaData.Global
-      database.globalDao.insertAllGlobal(coronaData.asGlobalDatabaseModel(global))
-            database.coronaInfoDao.insertAll(coronaData.asCountryDatabaseModel())
-        }
+
+            withContext(Dispatchers.IO) {
+
+                val coronaData = RETROFIT_SERVICE.getCoronaDataList()
+                val global =coronaData.Global
+                database.globalDao.insertAllGlobal(coronaData.asGlobalDatabaseModel(global))
+                database.coronaInfoDao.insertAll(coronaData.asCountryDatabaseModel())
+
+            }
 
     }
 }
