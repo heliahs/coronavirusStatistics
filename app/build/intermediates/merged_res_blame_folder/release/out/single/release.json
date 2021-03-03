@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/navigation_navigation.xml.flat",
-        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/navigation/navigation.xml"
-    },
-    {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/navigation_navigation.xml.flat",
+        "source": "/Users/KK/Desktop/CoronaLastUpdate/app/src/main/res/navigation/navigation.xml"
     },
     {
         "merged": "/Users/KK/Desktop/CoronaLastUpdate/app/build/intermediates/res/merged/release/drawable_flag_macedonia.png.flat",
