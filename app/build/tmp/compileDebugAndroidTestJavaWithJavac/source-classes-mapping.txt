@@ -1,0 +1,2 @@
+com/hh/coronalastupdate/test/BuildConfig.java
+ com.hh.coronalastupdate.test.BuildConfig

@@ -9,7 +9,6 @@
             type="com.hh.coronalastupdate.viewmodels.ListViewModel" />
     </data>
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-
         android:id="@+id/swiperefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">

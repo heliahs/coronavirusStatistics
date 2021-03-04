@@ -30,9 +30,7 @@ private lateinit var binding : ListFragmetLayoutBinding
 
 
 private val viewModel : ListViewModel by lazy {
-
     val activity = requireNotNull(this.activity) {
-
     }
     ViewModelProvider(this).get(ListViewModel(activity!!.application)::class.java)
 }

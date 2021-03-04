@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -42,6 +43,9 @@ public abstract class FragmentDetailLayoutBinding extends ViewDataBinding {
   public final TextView countryName;
 
   @NonNull
+  public final ScrollView detailFragmentParentId;
+
+  @NonNull
   public final TextView newCases;
 
   @NonNull
@@ -62,8 +66,8 @@ public abstract class FragmentDetailLayoutBinding extends ViewDataBinding {
   protected FragmentDetailLayoutBinding(Object _bindingComponent, View _root, int _localFieldCount,
       CardView cardCases, CardView cardDeaths, CardView cardRecovered, PieChart chart1,
       ConstraintLayout countryContainer, ImageView countryFlag, TextView countryName,
-      TextView newCases, TextView newDeaths, TextView totalCases, TextView totalDeaths,
-      TextView totalRecovered) {
+      ScrollView detailFragmentParentId, TextView newCases, TextView newDeaths, TextView totalCases,
+      TextView totalDeaths, TextView totalRecovered) {
     super(_bindingComponent, _root, _localFieldCount);
     this.cardCases = cardCases;
     this.cardDeaths = cardDeaths;
@@ -72,6 +76,7 @@ public abstract class FragmentDetailLayoutBinding extends ViewDataBinding {
     this.countryContainer = countryContainer;
     this.countryFlag = countryFlag;
     this.countryName = countryName;
+    this.detailFragmentParentId = detailFragmentParentId;
     this.newCases = newCases;
     this.newDeaths = newDeaths;
     this.totalCases = totalCases;

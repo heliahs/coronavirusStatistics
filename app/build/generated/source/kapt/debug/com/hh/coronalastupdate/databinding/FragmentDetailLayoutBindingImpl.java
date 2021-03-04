@@ -23,8 +23,6 @@ public class FragmentDetailLayoutBindingImpl extends FragmentDetailLayoutBinding
         sViewsWithIds.put(R.id.chart1, 12);
     }
     // views
-    @NonNull
-    private final android.widget.ScrollView mboundView0;
     // variables
     // values
     // listeners
@@ -42,14 +40,14 @@ public class FragmentDetailLayoutBindingImpl extends FragmentDetailLayoutBinding
             , (androidx.constraintlayout.widget.ConstraintLayout) bindings[6]
             , (android.widget.ImageView) bindings[7]
             , (android.widget.TextView) bindings[8]
+            , (android.widget.ScrollView) bindings[0]
             , (android.widget.TextView) bindings[4]
             , (android.widget.TextView) bindings[2]
             , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[5]
             );
-        this.mboundView0 = (android.widget.ScrollView) bindings[0];
-        this.mboundView0.setTag(null);
+        this.detailFragmentParentId.setTag(null);
         this.newCases.setTag(null);
         this.newDeaths.setTag(null);
         this.totalCases.setTag(null);
