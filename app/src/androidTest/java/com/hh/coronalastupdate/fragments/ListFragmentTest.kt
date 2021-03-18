@@ -11,6 +11,8 @@ import com.hh.coronalastupdate.MainActivity
 import com.hh.coronalastupdate.R
 import com.hh.coronalastupdate.adapters.MyListAdapter
 import com.hh.coronalastupdate.data.FakeData
+import io.mockk.every
+import io.mockk.mockk
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -38,6 +40,11 @@ class ListFragmentTest {
         // Confirm nav to DetailFragment and display main view
         onView(withId(R.id.detailFragmentParentId)).check(matches(isDisplayed()))
        onView(withId(R.id.country_name)).check(matches(withText(ITEM_IN_TEST.Country)))
+
+        val dataSource = mockk<FakeData>()
+        every {
+
+        }
     }
 
 
